@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bio – Kai Vincent</title>
+        <link rel="icon" type="image/png" href="KVFavicon.png">
+        <link rel="stylesheet" href="sitestyles.css">
+        <style>
+            #kai {
+                background-image: url(kai.jpg);
+                margin-left: 0;
+            }
+            
+            #portrait {
+                background-image: url(portrait.png);
+            }
+            
+            #soldering {
+                background-image: url(soldering.JPG);
+            }
+            
+            p {
+                font-size: 1.3em;
+            }
+            
+            #centercontainer {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: start;
+                align-items: stretch;
+            }
+            
+            .grid {
+/*                margin: 2.5% 0 0 0.5%;*/
+            }
+            
+            @media screen and (max-width: 1000px) {
+                #kai {
+                    margin: 2.5% 10% 0 10%;
+                }
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="mastercontainer">
+            <div id="nav">
+                <a href="home.html" style="line-height: normal; color: #e6a13b;"><h1>Kai Vincent</h1></a>
+                MY WORK
+                <br>
+                <br>
+                <a href="graphicdesign.html">Graphic Design</a>
+                <a href="aviationphotography.html">Aviation Photography</a>
+                <a href="aerialvideography.html">Aerial Videography</a>
+                <div id="engmasterlink">
+                    <a href="engineeringfabrication.html">Engineering &amp; Fabrication</a>
+                    <a href="productdesign.html" class="engsublink">Product Design</a>
+                    <a href="projectmanagement.html" class="engsublink">Project Management</a>
+                    <a href="electronicsdesign.html" class="engsublink">Electronics Design</a>
+                </div>
+                <br>
+                <br>
+                ABOUT ME
+                <br>
+                <br>
+                <a href="bio.html">Bio</a>
+                <a href="connect.html">Connect</a>
+                <br>
+                <br>
+                <a href="resume.html">Resume</a>
+                <br>
+                <br>
+                <span id="darkindicator">Enable Dark Mode</span>
+                <br>
+                <br>
+                <span id="copyright">© Kai Vincent 2021</span>
+            </div>
+            <div id="content">
+                <div id="centercontainer">
+                    <div class="gridthirds" id="kai"></div>
+                    <div class="gridthirds" id="portrait"></div>
+                    <div class="gridthirds" id="soldering"></div>
+                    <p>Hi! I'm originally from Charlotte, NC and now live in Southern California. I am a freshman at the <a href="https://iovine-young.usc.edu/" target="_blank">USC Iovine Young Academy</a>, where I study Arts, Technology and the Business of Innovation. My work focuses on the intersection of design, engineering, and business operations, and I am passionate about commercial aviation. Feel free to view my work using the menu, or read my <a href="resume.html">resume</a> to learn more about me!</p>
+                </div>
+            </div>
+        </div>
+        <script src="sitescripts.js"></script>
+    </body>
+</html>

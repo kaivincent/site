@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Graphic Design – Kai Vincent</title>
+        <link rel="icon" type="image/png" href="KVFavicon.png">
+        <link rel="stylesheet" href="sitestyles.css">
+        <style>
+            #mandala {
+                background-image: url(mandala.jpg);
+                background-color: #019D75;
+            }
+            
+            #crossedpaths {
+                background-image: url(crossedpaths.jpg);
+            }
+            
+            #stomach {
+                background-image: url(stomach.svg);
+            }
+            
+            #munlogo {
+                background-image: url(munlogo.png);
+            }
+            
+            .grid {
+                margin: 2.5% 1.25% 0 1.25%;
+            }
+            
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="mastercontainer">
+            <div id="nav">
+                <a href="home.html" style="line-height: normal; color: #e6a13b;"><h1>Kai Vincent</h1></a>
+                MY WORK
+                <br>
+                <br>
+                <a href="graphicdesign.html">Graphic Design</a>
+                <a href="aviationphotography.html">Aviation Photography</a>
+                <a href="aerialvideography.html">Aerial Videography</a>
+                <div id="engmasterlink">
+                    <a href="engineeringfabrication.html">Engineering &amp; Fabrication</a>
+                    <a href="productdesign.html" class="engsublink">Product Design</a>
+                    <a href="projectmanagement.html" class="engsublink">Project Management</a>
+                    <a href="electronicsdesign.html" class="engsublink">Electronics Design</a>
+                </div>
+                <br>
+                <br>
+                ABOUT ME
+                <br>
+                <br>
+                <a href="bio.html">Bio</a>
+                <a href="connect.html">Connect</a>
+                <br>
+                <br>
+                <a href="resume.html">Resume</a>
+                <br>
+                <br>
+                <span id="darkindicator">Enable Dark Mode</span>
+                <br>
+                <br>
+                <span id="copyright">© Kai Vincent 2021</span>
+            </div>
+            <div id="content">
+                <div id="centercontainer">
+                    <h1>Graphic Design</h1>
+                    <h4>Produced in the Adobe Suite with Original Content</h4>
+                    <div id="gallerycontainer">
+                        <a class="grid vertical" id="crossedpaths" href="crossedpaths.jpg" data-lightbox="graphics" data-title="Composition designed in InDesign, original photo taken on the Brooklyn Bridge" data-alt="Composition designed in InDesign, original photo taken on the Brooklyn Bridge"></a>
+                        <a class="grid vertical" id="mandala" href="mandala.jpg" data-lightbox="graphics" data-title="Mandala, designed in Illustrator" data-alt="Mandala, designed in Illustrator"></a>
+                        <a class="grid" id="stomach" href="stomach.svg" data-lightbox="graphics" data-title="Visual representation of the sound of a stomach, designed in Illustrator" data-alt="Visual representation of the sound of a stomach, designed in Illustrator"></a>
+                        <a class="grid" id="munlogo" href="munlogo.png" data-lightbox="graphics" data-title="Charlotte Latin MUN Logo, designed in Photoshop" data-alt="Charlotte Latin MUN Logo, designed in Photoshop"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+        <script src="sitescripts.js"></script>
+    </body>
+</html>

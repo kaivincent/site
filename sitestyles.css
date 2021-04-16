@@ -1,0 +1,345 @@
+@import url("https://use.typekit.net/xki8ubu.css");
+@import url("https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css");
+
+            body {
+                font-family: aktiv-grotesk, sans-serif;
+                height: 100vh;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            
+            #mastercontainer {
+                width: 95%;
+                margin: auto;
+                display: flex;
+/*                margin-top: 0;*/
+/*                height: 100%;*/
+            }
+
+.dark {
+    background-color: #121212;
+}
+            
+            #nav {
+                flex: 1;
+/*                max-width: 350px;*/
+                background-color: #1F64D1;
+                height: 100vh;
+                font-weight: 500;
+                font-style: normal;
+                text-align: center;
+                color: #D4D1BF;
+                position: sticky;
+                top: 0px;
+                font-size: 1.2em;
+                padding: 0 0.5% 0 0.5%;
+            }
+
+.darknav {
+    background-color: rgba(255,255,255,0.12)!important;
+}
+
+.darkcenter {
+    background-color: rgba(255,255,255,0.16)!important;
+    color: white;
+}
+
+.darkcenter a {
+    color: lightgray;
+}
+            
+            #nav:hover a {
+                color: white;
+            }
+
+#nav:hover #darkindicator {
+    color: white;
+}
+            
+            #nav a {
+                text-decoration: none;
+                color: #D4D1BF;
+                transition: 1s;
+                margin: 0 0 10px 0;
+                display: block;
+                font-weight: 300;
+                font-style: normal;
+            }
+
+            #engmasterlink:hover .engsublink{
+                display: block;
+                position: static;
+                opacity: 1;
+                transition: opacity 1s 0.1s;
+            }
+            
+            /*
+            #engmasterlink {
+                transition: padding-bottom 0s;
+                transition-delay: 3s;
+            }
+            
+            #engmasterlink:hover {
+                padding-bottom: 100px;
+                transition-delay: 0s;
+            }
+*/
+            
+/*
+            .engsublink.active {
+                transition-delay: 2s;
+            }
+*/
+            
+            #engmasterlink {
+                width: 100%;
+            }
+            
+            #nav .engsublink {
+                position: absolute;
+                opacity: 0;
+                font-size: 0.75em;
+                transition: opacity 0s;
+            }
+            
+            
+            #nav a:hover {
+                text-decoration: underline;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+            
+            #content {
+                flex: 4;
+                display: flex;
+                flex-wrap: wrap;
+/*                height: 100%;*/
+                align-items: stretch;
+                align-content: start;
+/*                max-width: 1600px;*/
+/*                margin-top: 0;*/
+            }
+            
+            .grid {
+                flex: 47.5%;
+                margin: 2.5% 0 0 2.5%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+/*                width: 30vw;*/
+                height: 35vw;
+                /*
+                Not sure why 30vw specifically works here to keep a square aspect ratio, but I got the tip thanks to this stack:
+                https://stackoverflow.com/questions/34152213/flexbox-responsive-grid-of-square-divs-maintaining-aspect-ratio
+                */              
+            }
+            
+            .gridthirds {
+                flex: 1;
+                margin: 2.5% 0 0 2.5%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+/*                width: 20vw;*/
+                height: 20vw;
+            }
+            
+            
+            #design {
+                background-image: url(graphicdesign.jpg);
+            }
+            
+            #engineering {
+                background-image: url(engineering.png);
+            }
+            
+            #aerial {
+                background-image: url(aerialvideography.jpg);
+            }
+            
+            #photography {
+                background-image: url(aviationphotography.jpg);
+            }
+            
+            #bio {
+                background-image: url(../kai.jpg);
+            }
+            
+            #connect {
+                background-image: url(chat.png);
+                background-size: auto 100%;
+                background-color: lavender;
+            }
+            
+            #resume {
+                background-image: url(resume.png);
+                background-size: auto 100%;
+                background-color: lavenderblush;
+            }
+            
+            .title {
+                opacity: 0;
+                transition: 1s;
+                margin: 5%;
+                height: 90%;
+                background-color: rgba(255,255,255,0.8);
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                font-size: 2.5em;
+                padding: 0 5% 0 5%;
+            }
+
+            .grid:hover .title, .gridthirds:hover .title {
+                opacity: 1;
+                
+            }
+            
+            .filterlayer {
+                height: 100%;
+                width: 100%;
+                transition: 2s;
+                display: inline-block;
+                backdrop-filter: blur(10px);
+                opacity: 0;
+            }
+            
+            .grid:hover .filterlayer, .gridthirds:hover .filterlayer {
+                opacity: 1;
+            }
+
+.grid a, .gridthirds a {
+    color: black;
+    text-decoration: none;
+}
+
+#darkindicator {
+    font-size: 0.9em;
+    transition: 1s;
+}
+
+#darkindicator:hover {
+    text-decoration: underline;
+}
+
+#centercontainer {
+    width: 90%;
+    margin: auto;
+    background-color: aliceblue;
+    min-height: 100%;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#columns {
+    display: flex;
+    text-align: left;
+}
+
+#columns h5 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+#columns h4 {
+    margin-bottom: 0;
+}
+
+#columns p {
+    margin-top: 0.3em;
+}
+
+#leftcol {
+    flex: 9;
+    padding: 1%;
+}
+
+#rightcol {
+    flex: 2;
+    padding: 1%;
+}
+
+#gallerycontainer {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: start;
+                align-items: stretch;
+                width: 90%;
+                margin: auto;
+            }
+            
+/* Temporarily deactivated this to prevent breaking format
+            @media screen and (min-width: 2000px) {
+                #content {
+                    flex-grow: 0;
+                }
+                
+                #nav {
+                    flex-grow: 0; 
+                }
+                #mastercontainer {
+                    width: 70%;
+                }
+            }
+*/
+
+@media screen and (min-width:2000px) {
+    #mastercontainer {
+        max-width: 1900px;
+    }
+    
+/*
+    .grid {
+        max-height: 700px;
+    }
+*/
+}
+            @media screen and (max-width: 1000px) {
+                .grid, .gridthirds {
+                    flex: 60%;
+                    margin: 2.5% 10% 0 10%;
+/*                    height: 30vh;*/
+                }
+                
+                #mastercontainer {
+                    display: inherit;
+                }
+                
+                #nav {
+/*                    flex: none;*/
+                    position: static;
+                    width: 76%;
+                    height: auto;
+                    margin: auto;
+                    padding: 2%;
+/*                    font-size: 1.4em;*/
+                }
+                #copyright {
+                    position: static;
+                }
+            }
+            
+            @media screen and (max-width: 800px) {
+/*
+                .grid, .gridthirds {
+                    flex: 60%;
+                    margin: 2.5% 10% 0 10%;
+                    height: 20vh;
+                }
+*/
+                #columns {
+                    display: initial;
+                }
+            }
+
+@media 
+            
