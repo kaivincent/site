@@ -23,6 +23,7 @@ var darkmode = function(){
             
 $(document).ready(function(){
     gridresize();
+    $("#nav").html("<a href='/' style='line-height: normal; color: #e6a13b;'><h1>Kai Vincent</h1></a>MY WORK<br><br><a href='graphicdesign'>Graphic Design</a><a href='aviationphotography'>Aviation Photography</a><a href='aerialvideography'>Aerial Videography</a><div id='engmasterlink'><a href='engineeringfabrication'>Engineering &amp; Fabrication</a><a href='productdesign' class='engsublink'>Product Design</a><a href='projectmanagement' class='engsublink'>Project Management</a><a href='electronicsdesign' class='engsublink'>Electronics Design</a></div><br><br>ABOUT ME<br><br><a href='bio'>Bio</a><a href='resume'>Resume</a><br><br><span id='darkindicator'>Enable Dark Mode</span><br><br><span id='copyright'>© Kai Vincent 2021</span>");
     if (sessionStorage.dark != undefined){
         if (sessionStorage.dark == "1"){
             darkmode();
