@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>USC ITE – Kai Vincent</title>
+        <link rel="icon" type="image/png" href="KVFavicon.png">
+        <link rel="stylesheet" href="sitestyles.css">
+        <style>
+            .grid {
+                margin: 2.5% 1.25% 0 1.25%;
+            }
+            
+            #mosaic {
+                background-image: url(assets/ite/mosaic.png);
+            }
+            #post {
+                background-image: url(assets/ite/post.png);
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="mastercontainer">
+            <div id="nav">
+            </div>
+            <div id="content">
+                <div id="centercontainer">
+                    <h1>USC ITE</h1>
+                    <p>Serving as the University of Southern California's chapter of the Institute of Transportation Engineers, USC ITE is a community of transportation engineers, planners, policy experts, and more. The diverse academic and industry interests among the student members is complemented by a variety of meetings, guest speakers, technical tours, and conferences that allow members to learn and connect with other students and professionals in the transportation community. As the Communications Chair, I had the great privilege of sharing our chapter's activities with internal and external audiences through several mediums. From a logo refresh to content creation in still images and video interviews to editing, copywriting, and publishing on our channels—including <a href="https://www.instagram.com/usc.ite" target="_blank">Instagram</a>, <a href="https://www.linkedin.com/company/uscite/">LinkedIn</a>, and <a href="https://iteusc.com" target="_blank">web</a>—it has been very rewarding to coordinate our content strategy!</p>
+                    <div id="gallerycontainer">
+                        <a class="grid horizontal" id="mosaic" href="assets/ite/mosaic.png" data-lightbox="ite" data-title="Mosaic of images collected throughout 2023 to celebrate the end of the year" data-alt="Mosaic featuring images from USC ITE activities in 2023, overlaid with the USC ITE logo"></a>
+                        <a class="grid horizontal" id="post" href="assets/ite/post.png" data-lightbox="ite" data-title="Digital flyer advertising a guest speaker event" data-alt="Digital flyer advertising a guest speaker event with SCAG Executive Director Kome Ajise"></a>
+                    </div>
+                    <video width="75%" controls>
+                    <source src="assets/ite/interview.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+        <script src="sitescripts.js"></script>
+    </body>
+</html>

@@ -160,9 +160,13 @@
                 background-image: url(engineering.png);
             }
             
-            #aerial {
+            /* #aerial {
                 background-image: url(aerialvideography.jpg);
-            }
+            } */
+
+#ite {
+    background-image: url(assets/ite/ite.jpg);
+}
             
             #photography {
                 background-image: url(aviationphotography.jpg);
